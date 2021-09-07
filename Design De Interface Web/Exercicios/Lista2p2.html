@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    
+    <body>
+        
+        <script>
+            var n = 2;
+            var div;
+            var qtd = 0;
+
+            while (qtd!==5)
+            {
+                for (i=1; i<=n; i++)
+                {
+                    if(n % i === 0)
+                    {
+                        div = div + i;
+                    }
+                }
+                if(div === n)
+                {
+                    qtd++
+                    alert ('Numeros perfeitos: '+ n)
+                }
+                n++
+            }
+        </script>
+    
+    </body>
+</html>

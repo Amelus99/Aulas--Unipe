@@ -1,0 +1,23 @@
+<!--Faça um documento HTML que permita ao usuário digitar sua
+idade. Em seguida, faça um script que receba a idade do
+indivíduo e informe se o mesmo atingiu a maioridade.-->
+
+<html>
+
+    <body>
+            <script>
+                function checaIdade(){
+                    if (document.getElementById("idade").value>=18)
+                        alert("Voce e maior de idade!");
+                    else    
+                        alert("Você não é maior de idade!");
+                }
+            </script>
+
+        <input id="idade" type="text" /><br/>
+        <button id="button" onclick="checaIdade()">Realizar calculo</button>
+
+
+    </body>
+
+</html>

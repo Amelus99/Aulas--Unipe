@@ -1,0 +1,60 @@
+<html>
+    <body>
+        <script>
+            var soma = document.getElementById("+").value;
+            var sub = document.getElementById("-").value;
+            var mult = document.getElementById("*").value;
+            var div = document.getElementById("/").value;
+
+
+
+        function soma() {
+         var f=document.getElementById("frm");
+         var n1=document.getElementById("n1").value;
+         var n2=document.getElementById("n2").value;
+         var soma = n1 + n2 ;
+         alert(soma);
+      }
+
+      function subtracao() {
+         var f=document.getElementById("frm");
+         var n1=document.getElementById("n1").value;
+         var n2=document.getElementById("n2").value;
+         var soma = n1 - n2 ;
+         alert(soma);
+      } 
+
+      function multiplicacao() {
+         var f=document.getElementById("frm");
+         var n1=document.getElementById("n1").value;
+         var n2=document.getElementById("n2").value;
+         var soma = n1 * n2 ;
+         alert(soma);
+      } 
+
+      function divisao() {
+         var f=document.getElementById("frm");
+         var n1=document.getElementById("n1").value;
+         var n2=document.getElementById("n2").value;
+         var soma = n1 / n2 ;
+         alert(soma);
+      } 
+        </script>
+        <button type="submit" id="+" onclick="soma()">+</button>
+        <button type="submit" id="-" onclick="subtração()">-</button>
+        <button type="submit" id="*" onclick="multiplicacao()">*</button>
+        <button type="submit" id="/" onclick="divisao()">/</button></br>
+        <button type="button" id="1" onclick=1>1</button>
+        <button type="button" id="2" onclick=2>2</button>
+        <button type="button" id="3" onclick=3>3</button>
+        <button type="button" id="4" onclick=4>4</button></br>
+        <button type="button" id="5" onclick=5>5</button>
+        <button type="button" id="6" onclick=6>6</button>
+        <button type="button" id="7" onclick=7>7</button>
+        <button type="button" id="8" onclick=8>8</button></br>
+        <button type="button" id="9" onclick=9>9</button>
+        <button type="button" id="0" onclick=0>0</button>
+       <button type="submit" id="botaoCalcula" onclick="calculaConta(op)">Calcular</button>
+    </body>
+
+</html>

@@ -1,0 +1,47 @@
+Q1:
+A)
+ 	1ª baixando a biblioteca em jQuery.com.
+	O usuario hospeda o JQuery.
+	2ª incluindo-o a partir de uma CDN.
+	A rede de conteudo hospeda.
+
+B)
+	Google, Netflix e Cloudflare.
+
+Q2:
+
+	Resposta letra "E". falta parenteses.
+	Ocuta o elemento com id=“test”.
+
+Q3:
+
+	Resposta letra "A".
+
+Q4:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>Q4:</title>
+    <script>
+        $(document).ready(function()
+        {
+            $("p").dblclick(function()
+            {
+                $("p").hide();
+            });
+        });
+    </script>
+    <body>
+        <h2>Churrasco</h2>
+        <p>Batatas de todo tipo</p>
+        <p>Feijoada</p>
+        <p>Linguiça</p>
+        <p>Picanha</p>
+        <p>Etc..</p>
+    
+    </body>
+</html>

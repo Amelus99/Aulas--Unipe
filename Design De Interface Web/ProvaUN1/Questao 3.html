@@ -1,0 +1,45 @@
+<html>
+    <body>
+        
+        
+        <script>
+            
+           function comb(){
+               
+               // Variáveis
+               var T;
+               var C = parseFloat(document.getElementById("C").value);
+               var G = 1.20;
+               var A = 0.90;
+               var L = parseFloat(document.getElementById("litro").value);
+
+                // Controle
+               if (L <= 20 && C == 1){
+                   T = G*(L*(1-(4/100)));
+                   confirm (T)
+
+               }
+               else if(L > 20 && C == 1){
+                   T = G*(L*(1-(6/100)));
+                   confirm (T)
+               }
+                   
+                else if(L <= 20 && C == 2){
+                   T = A*(L*(1-(3/100)));
+                   confirm (T)
+                }
+                
+                else if(L > 20 && C == 2){
+                   T = A*(L*(1-(5/100)));
+                   confirm (T)
+
+                }
+            }
+                //HTML chato
+        </script>
+
+         Litros: <input id="litro" type="number"> <br/><br/>
+         Combustivel 1=Gasolina ou 2=Alcool: <input id="C" type="number"> <br/><br/>
+         <button type="submit" id="botaoCalcula" onclick="comb()">Calcular</button>
+    </body>
+</html>

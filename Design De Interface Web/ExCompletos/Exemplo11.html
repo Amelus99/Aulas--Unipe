@@ -1,0 +1,22 @@
+<html>
+    <body>
+
+        <script>
+
+            function mudaFigura(){
+                var imagem = document.getElementById("imagem");
+            
+                if (imagem.src.match("sport2"))
+                    imagem.src = "sport.gif";
+                else
+                    imagem.src = "sport2.gif";
+            }
+
+        </script>
+
+        <img id="imagem" src="sport.gif" onclick="mudaFigura()">
+
+    </body>
+
+
+</html>

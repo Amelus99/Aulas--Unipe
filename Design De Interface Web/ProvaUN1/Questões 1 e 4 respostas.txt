@@ -1,0 +1,17 @@
+Q1:
+
+a) Falta indicar n1 e n2 no parametro da função e falta ponto e virgula na soma (;).
+
+b) Argumentos da função e o bloco de código chamasse função.
+
+Q4:
+
+a) Exibir um relogio
+
+b) Erros no div:
+	Posição errada na sintaxe, deve ser acima do script.
+	Fechamento do Script dentro do div.
+	Trecho type="text/javascript">document.write(startTime) desnecessario.
+   Erro no Script:
+	Função startTime nao declarada previamente na sintaxe, se nao iniciada
+	com antecendencia o programa nao saberá o que exibir.

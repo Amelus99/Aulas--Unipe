@@ -1,0 +1,35 @@
+<html>
+    <body>
+        
+        
+        <script>
+            
+           function ant(){
+               
+               
+               var t1 = document.getElementById("t1").value;
+               var t1g = parseInt(document.getElementById("t1g").value);
+               var t2 = document.getElementById("t2").value;
+               var t2g = parseInt(document.getElementById("t2g").value);
+
+               if (t1g>t2g)
+               {
+                   alert('O vencedor da partida é: '+t1+'!!!!');
+               }
+               else if (t2g>t1g)
+               {
+                   alert('O vencedor da partida é: '+t2+'!!!!');
+               }
+               else
+               alert ('Empate!!!!');
+            
+           }
+        </script>
+
+         Time 1:<input id="t1" type="text"> <br/>
+         Time 1 Gols:<input id="t1g" type="number"> <br/>
+         Time 2:<input id="t2" type="text"> <br/>
+         Time 2 Gols:<input id="t2g" type="number"> <br/>
+         <button type="submit" id="botao" onclick="ant()">Times e gols</button>
+    </body>
+</html>

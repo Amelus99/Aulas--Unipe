@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <body>
+            Código: <input id="Cod" type="number"> <br/>
+            Salário: <input id="Sal" type="number"> <br/>
+            <button type="submit" id="botaoCalcula" onclick="BDP()">Calcular</button>
+        <script>
+            function BDP()
+            {
+                var c = parseFloat(document.getElementById("Cod").value);
+                var s = parseFloat(document.getElementById("Sal").value);
+                switch (c)
+                {
+                    case 1: var a = s*(50/100);
+                            s = a+s;
+                            alert ('O funcionario é Escriturário seu aumento é de: R$'+a+', seu salario passa a ser de: R$ '+s);
+                            break;
+
+                    case 2: var a = s*(35/100);
+                            s = a+s;
+                            alert ('O funcionario é Secretário seu aumento é de: R$'+a+', seu salario passa a ser de: R$ '+s);
+                            break;
+
+                    case 3: var a = s*(20/100);
+                            s = a+s;
+                            alert ('O funcionario é Caixa seu aumento é de: R$'+a+', seu salario passa a ser de: R$ '+s);
+                            break;
+
+                    case 4: var a = s*(10/100);
+                            s = a+s;
+                            alert ('O funcionario é Gerente seu aumento é de: R$'+a+', seu salario passa a ser de: R$ '+s);
+                            break;
+
+                    case 5: alert ('O funcionario é Diretor, não possui aumento, seu salario é de: R$ '+s);
+                            break;
+                }
+            }
+        </script>
+    </body>
+</html>

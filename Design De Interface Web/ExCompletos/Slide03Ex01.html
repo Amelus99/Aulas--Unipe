@@ -1,0 +1,22 @@
+<!-- Faça um documento HTML que permita ao usuário digitar seu RG
+e CPF. Como tais campos são obrigatórios, faça um script que
+verifica se os campos realmente foram preenchidos. -->
+
+<html>
+    <body>
+        <script>
+            function obrigatorio (x){
+                if (x.value=="")
+                    alert("Campo obrigatório!")
+
+            }
+
+
+        </script>
+
+    </body>
+
+    RG: <input id="rg" type="text" onblur="obrigatorio(this)"> <br/>
+    CPF: <input id="cpf" type="text" onblur="obrigatorio(this)"><br/> 
+
+</html>
